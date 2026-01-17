@@ -1,6 +1,6 @@
 * {
   /* border-top: 10px solid #1098ad; */
-  margin: 0;
+  margin: 5;
   padding: 0;
   box-sizing: border-box;
 }
@@ -9,17 +9,14 @@
 body {
   font-family: sans-serif;
   color: #444;
-  line-height: 1.5;
+
   border-top: 10px solid #1098ad;
   position: relative;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 30px;
+  grid-template-columns: 1fr 450px;
   column-gap: 50px;
   row-gap: 30px;
 }
@@ -31,7 +28,7 @@ body {
   justify-items: center;
 }
 
-.main-content {
+.content {
   padding-top: 5px;
 }
 
@@ -81,40 +78,4 @@ header {
 
 li {
   font-style: italic;
-}
-
-.image-row {
-  display: flex;
-  gap: 16px;
-  margin: 20px 0;
-}
-
-.image-row,
-.image-grid {
-  width: 100%;
-  max-width: 150px;
-  border-radius: 6px;
-  object-fit: cover;
-}
-
-/* 🔧 多图网格 */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 14px;
-  margin-top: 20px;
-}
-
-.title {
-  font-size: 20px;
-  margin-bottom: 20px;
-  color: #1098ad;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 6px;
 }
